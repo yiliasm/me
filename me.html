@@ -2,55 +2,157 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Ilias Yeck – Personal Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A little about Ilias Yeck</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #fff;
+            text-align: center;
+            padding: 2rem 1rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+            header h1 {
+                color: #990000;
+                font-size: 2.5rem;
+            }
+
+            header p {
+                margin: 0.5rem 0;
+            }
+
+            header img {
+                margin-top: 1rem;
+                width: 300px;
+                height: auto;
+                border-radius: 10px;
+            }
+
+        nav {
+            background-color: #222;
+            padding: 0.5rem;
+            text-align: center;
+        }
+
+            nav a {
+                color: white;
+                text-decoration: none;
+                margin: 0 1rem;
+                font-weight: bold;
+            }
+
+                nav a:hover {
+                    text-decoration: underline;
+                }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        section {
+            background-color: #fff;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+            section h2 {
+                color: #990000;
+                border-bottom: 2px solid #ccc;
+                padding-bottom: 0.5rem;
+            }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            text-align: left;
+            padding: 0.5rem;
+            color: #990000;
+        }
+
+        td {
+            padding: 0.5rem;
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 600px) {
+            header img {
+                width: 100%;
+                height: auto;
+            }
+
+            main {
+                padding: 1rem;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <!-- header section -->
+
     <header>
         <h1>Ilias Yeck</h1>
         <p>
             Email: <a href="mailto:iliasmyeck@lewisu.edu">iliasmyeck@lewisu.edu</a><br>
-            My Discord Username is .ilias
+            Discord: .ilias
         </p>
-        <img src="me.png" alt="This is me and my girlfriend's nephew Levi" width="300" height="400">
+        <img src="me.png" alt="This is me and my girlfriend's nephew Levi.">
     </header>
 
-    <!-- nav bar -->
     <nav>
-        <ul>
-            <li><a href="#intro">Intro</a></li>
-            <li><a href="#goals">Goals</a></li>
-            <li><a href="#hobbies">Hobbies</a></li>
-            <li><a href="#funfact">Fun Fact</a></li>
-        </ul>
+        <a href="#intro">About</a>
+        <a href="#goals">Goals</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#fact">Fun Fact</a>
     </nav>
 
-    <!-- main -->
     <main>
-        <!-- intro section -->
         <section id="intro">
             <h2>Introduction about me!</h2>
             <p>
-                Hi my name is Ilias Yeck and I am almost finished with my computer science degree.
-                In the future I hope to be able to create some sort of app or work on developing a game.
-                One of my biggest hobbies right now is golfing which is weird to me because I never thought
-                that I would enjoy golf. I hope to become a lot better at it this year as it is one of the
-                more relaxing sports to do. Anything that is outdoors I love doing and am excited for this
-                summer to really start.
+                Hi, my name is Ilias Yeck and I am almost finished with my computer science degree.
+                In the future, I hope to create an app or help develop a game.
+                One of my biggest hobbies right now is golfing, which is funny because I never expected to like it.
+                I plan to improve this year as it's a relaxing outdoor activity.
             </p>
         </section>
 
-        <!-- course goals made to a table -->
         <section id="goals">
             <h2>Course Goals</h2>
             <table>
                 <thead>
                     <tr>
-                        <th>#</th>
-                        <th>Goal</th>
+                        <th>Goal #</th>
+                        <th>Description</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -70,117 +172,27 @@
             </table>
         </section>
 
-        <!-- hobbies section -->
         <section id="hobbies">
-            <h2>My Hobbies</h2>
+            <h2>Hobbies</h2>
             <ul>
-                <li><a href="https://en.wikipedia.org/wiki/Golf">Golfing</a> � my latest hobby.</li>
-                <li><a href="https://en.wikipedia.org/wiki/Kayaking">Kayaking</a> � I have always loved it.</li>
-                <li><a href="https://en.wikipedia.org/wiki/Motocross">Motocross</a> � I�ve ridden dirt bikes since age 4.</li>
+                <li><a href="https://en.wikipedia.org/wiki/Golf">Golfing</a> – My latest and favorite hobby.</li>
+                <li><a href="https://en.wikipedia.org/wiki/Kayaking">Kayaking</a> – I've always enjoyed this outdoor activity.</li>
+                <li><a href="https://en.wikipedia.org/wiki/Motocross">Motocross</a> – I’ve been riding dirt bikes since I was 4.</li>
             </ul>
         </section>
 
-        <!-- fun fact section -->
-        <section id="fun">
+        <section id="fact">
             <h2>Fun Fact</h2>
             <p>
-                This year I started my own roofing company and it has been going really well! We've been averaging
-                2 roofs a week being put on, and it has been an amazing experience. I hope in the future that I can
-                do this full time. I created my own website for the company a few months ago but after this class or
-                maybe even as my project I want to refine it and recreate it in HTML. Originally I used Squarespace
-                to create my website but I know if I used HTML it would work a lot better.
+                This year I started my own roofing company, and it's going great! We're averaging two roofs a week.
+                I built the current company website on Squarespace, but after this class, I want to recreate it using HTML for better performance and customization.
             </p>
         </section>
     </main>
 
-    <!-- Footer -->
     <footer>
         <p>&copy; Ilias Yeck 2025</p>
     </footer>
+
 </body>
 </html>
-
-/*styles.css*/
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #fefefe;
-    color: #333;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    text-align: center;
-    background-color: #f4f4f4;
-    padding: 20px;
-}
-
-header h1 {
-    color: #990000;
-}
-
-header img {
-    margin-top: 10px;
-    border-radius: 8px;
-}
-
-nav {
-    background-color: #eee;
-    padding: 10px 0;
-    text-align: center;
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #990000;
-    font-weight: bold;
-}
-
-main {
-    padding: 20px;
-    max-width: 800px;
-    margin: auto;
-}
-
-section {
-    margin-bottom: 30px;
-}
-
-h2 {
-    color: #990000;
-    margin-bottom: 10px;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
-}
-
-th, td {
-    border: 1px solid #ccc;
-    padding: 10px;
-    text-align: left;
-}
-
-th {
-    background-color: #f2dcdc;
-}
-
-footer {
-    text-align: center;
-    padding: 15px;
-    background-color: #f4f4f4;
-    color: #666;
-    margin-top: 40px;
-}
